@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bonsai.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bonsai_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bonsai module.
+    case 'help.page.bonsai':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Email support system that utilises inbound email routing') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+name: Bonsai
+type: module
+description: Email support system that utilises inbound email routing
+core: 8.x
+package: Bonsai
